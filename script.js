@@ -11,7 +11,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&ap
     cityName.innerHTML = data.name
     desc.innerHTML = data.weather[0].description
     var tempCelcius = Math.ceil((data.main.temp)-273.15)
-    temp.innerHTML = tempCelcius + " celcius"
+    temp.innerHTML = tempCelcius + " Celcius"
 })
 .catch(error => alert('Wrong City Name'))
 })
